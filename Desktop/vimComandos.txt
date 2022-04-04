@@ -1,0 +1,98 @@
+Para cambiar el tema del nvim hay que sustituir la ruta del tema en el fichero .config/nvim/init.vim
+Para cabiar los colores de onedark es en /nvim/plugged/autoload/onedark.vim
+
+Para abrir varios ficheros y tenerlos en el buffer es escribiendo
+varias rutas en el comando de vim:
+vim /descargas/fichero1 /descargas/fichero2
+
+Para moverte se utiliza k l j h --> arriba, derecha, abajo, izquierda
+
+Para insertar se utiliza shft o, a, o, i --> """"
+Con shift a insertas al final de la linea
+Con shift i insertas al comienzo de la linea
+
+Para REPETIR UN COMANDO es con .
+
+Para undo y reedo se utiliza u, ctrl r 
+
+Para avanzar por palabras se utiliza w (adelante) y b (atras) 
+
+Para borrar se utiliza la d. dd para borrar la linea entera, d w para borrar la siguiente palabra, d b para borrar la palabra anterior
+
+Con : entras en modo comando y si quieres ir a una linea especifica utilizas el :29 para ir a la linea 29
+
+Para ir al inicio del documento se utiliza gg y para ir al final shift g
+
+Para cambiar una palabra se utiliza c w, puedes hacer lo mismo con letras usando la h l. Tambien puedes cambiar la linea entera con cc
+
+Para ir a una letra especifica de la linea utiliza t (adelante) y shift t (atras) 
+
+Para ir al inicio de la linea es con 0 y para ir al final es $
+
+Con { y } avanzo por los espacios en blanco
+
+			VISION
+Para entrar en modo vision es con v y me muevo con k l j h
+Con shift v entro en modo vision pero por lineas 
+
+Con d borro la linea 
+Con p pego la linea (con shift p lo pega arriba)
+Con y copio la linea
+Con c cambio el texto seleccionado
+
+
+			COMANDOS
+Para entrar en modo comando es con : 
+
+Para reemplazar una palabra en todo el documento es con 
+:%s/palabra/nuevaPalabra/g   --> g para que sea global 
+Para elimirar las palabras resaltadas de la busqueda es con 
+:nohlsearch
+
+			MACROS
+Para comenzar a grabar un macro hay que utilizar q y darle un nombre, por ejemplo m (q m) y para parar de grabar utilizas de nuevo la q
+
+Para utilizar ese macro, utilizas @ y el nombre del macro m (@ m)
+
+Para aplicar un macro a varias lineas se puedo utilizar el:
+%norm! @m     -->  y colocamos el nombre del macro que grabamos (m)
+Con el porcentaje lo aplicará a todo el archivo, para acotar sustituimos el % por las lineas en las que quiero que aplique el macro:
+2,5norm! @m  --> aplicará el macro m de la linea 2 a la 5
+
+
+            CUSTOM KEYS
+Para salir del modo edición jk jj kk kj
+Para indentar en el modo de vision con Z z
+Para guardar rápido Ctrl s 
+Para guardar y salir rápido Ctrl q
+Para mover una linea hacia arriba es shift k
+Para mover una linea hacia abajo es shift j
+Para borrar el current buffer es Ctrl b
+Para hacer un split de archivos sería :split para vertical y :vsplit para horizontal
+Para moverse entre los splits es con Ctrl j k h l
+Para redemencionar una ventana es alt j k h l
+Para moverte entre archivos es con TAB y con SHIFT TAB
+Para comentar una linea es: espacio /
+Para abrir el nerdtree: alt w (para toggle) y alt m (para focus)
+Leader{
+	F:Files
+	B:Buffer
+	G:Grep
+	T:Tags
+	M:Marks
+
+	Abrir{
+		Ctrl+t: Tap split
+		Ctrl+x: Split
+		Ctrl+v: VSplit
+	}
+}
+
+
+
+
+
+
+
+
+

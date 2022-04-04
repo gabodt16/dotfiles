@@ -1,0 +1,61 @@
+Recordatorio volver al capítulo 5 de gestores de ventana para configurar los mirrorlist en el minuto 11:55!!!!!!!!!!
+Los MirrorList se colocan en la dirección: /etc/pacman.d/mirrorlist
+
+El log de qtile está en: .local/share/qtile/qtile.log
+
+Recordatorio la partición EFI tiene que estar farmateada en FAT32 (se usa el comando: mkfs.fat -F 32 /dev/sda3)
+Para saber en qué formato está utiliza el comando: wipefs /dev/sda3
+
+** Para listar los programas y que los puedas llamar desde la terminal tienes que agregarlos a /usr/bin/nombreDelPrograma y detro del archivo colocar lo siguienta. Por último dar permisos de ejecución
+#!/bin/sh
+exec /carpeta/delArchivo/ejecutable  "$@"
+
+##El fichero de configuración está en .config/qtile/config.py
+
+##Para apagar el PC
+shutdown now
+
+##Para el ícono de la batería se utilizo el el:
+cbatticon &
+
+##Para poner el teclado en español
+setxkbmap es
+
+##Para el audio utilizo el pulseaudio y la interfaz gráfica es pavucontrol (Si tienes fallos prueba esto rm .config/pulse/*)
+pulseaudio &
+
+##Para poner el fondo de pantalla
+feh --bg-scale Imagenes/rin.png &
+
+##Para los usb utilizo el udiskie y la ruta para accedera ellos es:  -> (para desmontarlo utilizo el ícono de la derecha y a la opción de unmount)
+cd /run/media/gabo/
+
+##Para las pantallas utilizo el arandr pero también existe por defecto el xrandr y el comando que utilicé es: -> (xrandr solo para ver los monitores que están conectados)
+xrandr --output eDP-1 --mode 1920x1080 --output HDMI-2 --mode 1920x1080
+
+##Para descomprimir archivos tar.gz 
+tar xzvf archivo.tar.gz
+
+##Para comprimir archivos tar.gz
+tar czvf archivo.tar.gz /archivo/carpeta/*
+
+## Para la música puedo averiguar sobre el cmus que es un reproductor de musica en la terminal
+
+## Para los usb o discos duros externos utilizo udiskie y udisks(Para acceder está en /run/media/gabo)
+udiskie -t &
+
+## Capturas de pantalla con scrot
+mod shift s     o      mod s
+
+## Arreglar el widget de red 
+pip install psutil      -->   también verificar con ip a si la interfaz está correcta y cambiarlo en widgets de python
+
+## Interprete de comandos, he cambiado el shell de bash a fish. para listar los que tengo es con:
+chsh -l    --> y para cambiar la shell es con el comando: chsh -s /bin/fish 
+Para moverse rápido de una shell a otra con poner el nombre te cambia automáticamente: bash   o    fish
+
+## Para entrar en modo vi en fish es con este comando:
+fish_vi_key_bindings
+
+## Para salir del modo vi en fish es con este comando:
+fish_default_key_bindings
