@@ -10,7 +10,7 @@ alias cat='bat --style=numbers --paging=never'
 alias ls='exa --group-directories-first'
 alias tree='exa -T'
 alias dotfiles="git --git-dir $HOME/.dotfiles/ --work-tree $HOME"
-alias ll='ls -la'
+alias ll='exa -la'
 
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 . ~/.git-prompt.sh
