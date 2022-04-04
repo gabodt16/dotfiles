@@ -1,0 +1,16 @@
+export PATH=$HOME/.local/bin:$PATH
+export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_STYLE_OVERRIDE=kvantum 
+
+# Composer
+picom &
+# Keyboard Layout
+setxkbmap latam &
+# Wallpaper
+feh --bg-scale imagenes/rin.png &
+# Screens
+xrandr --output DVI-D-1 --primary --mode 1920x1080 --pos 1280x180 --rotate normal --output DP-1 --mode 2560x1440 --pos 3200x0 --rotate normal --output DP-2 --off --output HDMI-1 --mode 1280x1024 --pos 0x208 --rotate normal --output DP-3 --off &
+# Udiskie
+udiskie -t &
+# Icono de wifi o internet
+nm-applet &
