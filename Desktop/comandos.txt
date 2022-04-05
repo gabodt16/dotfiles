@@ -59,3 +59,8 @@ fish_vi_key_bindings
 
 ## Para salir del modo vi en fish es con este comando:
 fish_default_key_bindings
+
+## Para crear un enlace simbólico es con el comando ln -s como en el caso de
+## nvim que con el comando lo podemos llamar solo con vim, para eso hay que estar 
+## en la ruta /usr/bin/
+ln -s nvim vim

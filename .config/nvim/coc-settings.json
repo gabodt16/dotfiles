@@ -27,5 +27,5 @@
     //"explorer.icon.enableVimDevicons": true,
     "explorer.icon.enableNerdfont": true,
     //"explorer.icon.source": "vim-devicons",
-    "clangd.path": "/home/antonio/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
+    "clangd.path": "/home/gabo/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }
