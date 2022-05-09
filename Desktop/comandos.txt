@@ -64,3 +64,6 @@ fish_default_key_bindings
 ## nvim que con el comando lo podemos llamar solo con vim, para eso hay que estar 
 ## en la ruta /usr/bin/
 ln -s nvim vim
+
+## Para crear un alias permanente en fish es con el comando:
+alias -s ll "ls -la"
