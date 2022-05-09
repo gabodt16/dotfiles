@@ -21,6 +21,6 @@ colors:
     background: '0x292d3e'
     foreground: '0xbbc5ff'
 font:
-  size: 18.0
+  size: 14.0
 window:
   opacity: 0.95
