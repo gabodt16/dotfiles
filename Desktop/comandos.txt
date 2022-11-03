@@ -67,3 +67,6 @@ ln -s nvim vim
 
 ## Para crear un alias permanente en fish es con el comando:
 alias -s ll "ls -la"
+
+## Para solucionar el problema de las firmas PGP hay que reinstalar el paquete archlinux-keyring
+sudo pacman -S archlinux-keyring
